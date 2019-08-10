@@ -10,7 +10,7 @@
 
     [python-telegram-bot reference](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Introduction-to-the-API)
 
-3. 核心代码
+3. 代码
 
 - 美股数据API
   ```python
