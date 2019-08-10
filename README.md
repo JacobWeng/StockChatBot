@@ -2,15 +2,15 @@
 
 1. 需安装以下python包
 - `iexfinance`, `openstock` 用于获取美股数据
+   pip install openstock
 - `rasa`, `spacy` 用于nlp, ner
 - `python-telegram-bot` 用于和telegram-bot交互会话
-
 
 2. 申请一个 telegram-bot token
 
     [python-telegram-bot reference](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Introduction-to-the-API)
 
-3. 代码
+3. Core Method
 
 - 美股数据API
   ```python
@@ -124,4 +124,10 @@
           if item == 'volume':
               response = robot_sentences['reply_volume'].format(quote['volume'])
       return new_state, response
+  
+  4. 运行Bot
+  - 打开你已经注册好的telegram，切换到与Bot对话的页面
+  - 在python comandline 运行 上述文档
+    python stockboot.py
+  - 在Bot界面可进行多轮多次回话，查询股价交易量等等
   ```
